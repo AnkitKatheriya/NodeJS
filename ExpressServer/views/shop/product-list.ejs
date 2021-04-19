@@ -1,0 +1,33 @@
+<%- include('../includes/head.ejs') %>
+<header class="main-header">
+  <%- include('../includes/navigation.ejs') %>
+</header>
+<main>
+  <div class="product-list">
+    <% if(hasProducts){%> <% for(let product of products) {%>
+    <article class="card">
+      <header>
+        <h2 class="card-title"><%= product.title %></h2>
+      </header>
+      <div class="card-item__img">
+        <img
+          src="https://www.google.com/search?q=book+images&rlz=1C1CHBF_enIN869IN869&sxsrf=ALeKk02ijmT3tD-ZLPJBwpBtUoZprse38g:1603129926308&tbm=isch&source=iu&ictx=1&fir=KMnBZio7kz1RqM%252C37hDvxinV4DSIM%252C_&vet=1&usg=AI4_-kTIyWH4U-aLWlmjnVDTWiE-EeeY5Q&sa=X&ved=2ahUKEwiO5KSunMHsAhUKdCsKHVWzBYQQ9QF6BAgKEGg&biw=1680&bih=939#imgrc=y31HA4qfVKlTSM"
+          alt="book"
+        />
+      </div>
+      <div class="card-content">
+        <div class="card-item__price"><strong>$19.99</strong></div>
+        <p class="card-item__description">
+          A very interesting book about so many even more interesting things!
+        </p>
+      </div>
+      <div class="card-actions">
+        <button class="card-button">Add to Cart</button>
+      </div>
+    </article>
+    <% } %> <% } else { %>
+    <h3>No product found..</h3>
+    <% } %>
+  </div>
+</main>
+<%-include('../includes/footer.ejs')%> <%-include('../includes/end.ejs')%>

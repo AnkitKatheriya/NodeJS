@@ -1,0 +1,33 @@
+body{
+    font-size: 12px;
+}
+
+.product-list{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.card{
+    width: 200px;
+    height: 300px;
+    display:inline-block;
+    margin: 10px;
+    box-shadow: aqua;
+    border: 2px white solid;
+}
+
+.card-title{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.card-item__img{
+
+}
+
+.card-item__price{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
